@@ -1,0 +1,77 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+
+h1,h2,h3,.h1,.h2,.h3{
+    font-family: "Orbitron", sans-serif;
+}
+
+
+:root{
+    --white:rgb(239, 248, 243);
+    --grey:rgb(193, 210, 200);
+    --purple: rgb(99, 49, 131);
+    --darkp: rgb(56, 26, 76);
+}
+
+.bg-white{
+    background-color: var(--white);
+}
+
+.bg-grey{
+    background-color: var(--grey);
+}
+
+.bg-purple{
+    background-color: var(--purple);
+}
+
+.bg-darkp{
+    background-color: var(--darkp);
+}
+
+.white{
+    color: var(--white);
+}
+
+.grey{
+    color: var(--grey);
+}
+
+.purple{
+    color: var(--purple);
+}
+
+.darkp{
+    color: var(--darkp);
+}
+
+.timer{
+    font-size:80px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px var(--grey),-2px -2px 5px var(--grey);
+}
+
+.custom-btn{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--grey);
+    border: 3px solid var(--grey);
+    border-radius: 40px;
+    transition: 0.5s;
+    
+}
+
+.custom-btn:hover{
+    background-color: var(--grey);
+    color: var(--purple);
+}
+
+.countdown{
+    height: 300px;
+    width: 300px;
+    font-size: 200px;
+    color: var(--grey);
+    
+}

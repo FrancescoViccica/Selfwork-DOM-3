@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Selfwork DOM 3</title>
+  
+  
+  
+  
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="./style.css">
+  
+  
+</head>
+<body class="bg-darkp">
+  
+  <!-- header -->
+  
+  <header>
+    <h1 class="text-center white mt-5 timer">Timer</h1>
+  </header>
+  
+
+  <!-- Campi input -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      
+      <!-- Input -->
+      <div class="col-6 my-5">
+        <div class="input-group input-group-lg">
+          
+          <input type="number" class="form-control text-center" >
+        </div>
+      </div>
+
+
+      <!-- Bottons -->
+      <div class="col-8 d-flex justify-content-around my-5">
+        <button id="playBtn" type="button" class="btn custom-btn">
+          <i class="fa-solid fa-play fa-2x"></i>
+        </button>
+        <button id="pauseBtn" type="button" class="btn custom-btn">
+          <i class="fa-solid fa-pause fa-2x"></i>
+        </button>
+        <button id="stopBtn" type="button" class="btn custom-btn">
+          <i class="fa-solid fa-stop fa-2x"></i>
+        </button>
+
+      </div>
+      
+    </div>
+  </div>
+  
+
+  <!-- Countdown -->
+
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+      <p class="d-flex align-items-center justify-content-center text-center countdown">0</p>
+    </div>
+
+  </div>
+  
+  
+  <!-- Fontawesome -->
+   <script src="https://kit.fontawesome.com/c3c57cef9c.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  
+  <!-- Custom Javascript -->
+  <script src="./main.js"></script>
+</body>
+</html>
