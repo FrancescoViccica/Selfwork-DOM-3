@@ -12,16 +12,19 @@ let remainingSecond = 0;
 playBtn.addEventListener('click', ()=>{
         
         clearInterval(interval);
-        counter = inputCountdown.value;
+        // counter = inputCountdown.value;
        
-
-        if (remainingSecond != 0) {
+// if (remainingSecond != 0){}
+        if (remainingSecond > 0) {
             counter = remainingSecond
-        }
+        }else {
+        counter = parseInt(inputCountdown.value) || 0;
+    }
     
         interval = setInterval(() => {
             if(counter < 0){
                 clearInterval(interval);
+                remainingSecond = 0;
                 remainingTime.innerHTML = '--';
     
             }else{
@@ -40,9 +43,11 @@ pauseBtn.addEventListener('click', ()=>{
 })
 
 stopBtn.addEventListener('click', ()=>{
+   
     clearInterval(interval);
     inputCountdown.value = '';
     remainingTime.innerHTML = '--';
+    remainingSecond = 0;
 })
 
 
